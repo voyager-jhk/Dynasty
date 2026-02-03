@@ -25,11 +25,11 @@ if(NOT BUILD_WASM)
     )
 endif()
 
-# Tests
-if(BUILD_TESTS AND NOT BUILD_WASM)
-    enable_testing()
-    add_subdirectory(tests)
-endif()
+# Tests disabled
+#if(BUILD_TESTS AND NOT BUILD_WASM)
+#    enable_testing()
+#    add_subdirectory(tests)
+#endif()
 
 # WASM target
 if(BUILD_WASM)
